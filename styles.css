@@ -27,7 +27,7 @@ section {
 
 .inicio-fundo {
     /* aula 3 */
-    background-image: url('img/img/4965007.jpg');
+    background-image: url('img/img/funk.jpg');
     /* Substitua pelo caminho da sua imagem */
     background-size: cover;
     background-position: right;
@@ -48,11 +48,6 @@ section {
     
 }
 
-.img-inicio {
-    max-width: 100px;  /* Tamanho máximo de largura */
-    max-height: 100px; /* Tamanho máximo de altura */
-    object-fit: contain; /* Ajusta a imagem para caber dentro da caixa sem distorcer */
-}
 
 .esquerda-conteudo {
     display: flex;
