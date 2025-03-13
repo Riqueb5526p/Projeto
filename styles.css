@@ -37,6 +37,8 @@ header {
 
 
 section {
+    text-align: right;
+    /* Alinha o conteúdo ao lado direito */
     padding-bottom: 5rem;
 }
 
@@ -160,21 +162,18 @@ h2 {
     background-color: #F1EDEF;
 }
 
-#toggleButton {
-    position: relative;
-    position: fixed;
-    top: 10px;
-    /* Ajusta a distância do topo da página */
-    right: 10px;
-    /* Ajusta a distância do lado direito da página */
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: 1.5rem;
-    color: inherit;
-    /* Adapta-se ao modo escuro ou claro */
+body.dark-mode header,
+body.dark-mode .inicio-fundo,
+body.dark-mode #galeria,
+body.dark-mode #contato,
+body.dark-mode .formulario {
+    background-color: #1f1f1f;
+    /* Cor de fundo no modo escuro */
+    color: white;
+    /* Cor do texto no modo escuro */
 }
 
-#toggleButton:focus {
-    outline: none;
+/* Exemplo de ajuste nos links */
+body.dark-mode .nav-link {
+    color: white;
 }
