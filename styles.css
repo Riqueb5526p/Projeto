@@ -179,7 +179,7 @@ body.dark-mode .nav-link {
 }
 
 #toggleButton {
-    position: absolute;
+    position: fixed;
     top: 10px;
     /* Ajusta a distância do topo da página */
     right: 10px;
