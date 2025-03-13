@@ -194,4 +194,5 @@ body.dark-mode .nav-link {
 
 #toggleButton:focus {
     outline: none;
+}
     /* Remove o contorno ao focar */
