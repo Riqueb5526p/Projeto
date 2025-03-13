@@ -2,12 +2,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
 
 :root {
-    --laranja-claro: #FF862A;
+    --Azul_Escuro: #28036d;
 }
 
+
 body {
-    font-size: 1rem;
-    font-family: 'Montserrat';
+    background-color: white;
+    color: black;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+body.dark-mode {
+    background-color: #121212;
+    color: white;
 }
 
 header {
@@ -21,7 +41,7 @@ section {
 
 
 .nav-link {
-    color: #CB6D43;
+    color: #28036d;
     font-weight: 600;
 }
 
@@ -45,7 +65,7 @@ section {
     top: 18rem;
     width: 45rem;
     height: auto;
-    
+
 }
 
 
