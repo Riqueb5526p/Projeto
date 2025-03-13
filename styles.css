@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
 
 :root {
-    --Azul_Escuro: #28036d;
+    --Azul_Escuro: #FF862A;
 }
 
 
@@ -41,7 +41,7 @@ section {
 
 
 .nav-link {
-    color: #28036d;
+    color: #FF862A;
     font-weight: 600;
 }
 
