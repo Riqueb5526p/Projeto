@@ -32,7 +32,8 @@ body.dark-mode {
 }
 
 header {
-    background-color: #ffffff;
+    background-color: white;
+    transition: background-color 0.3s;
 }
 
 
@@ -167,7 +168,7 @@ body.dark-mode .inicio-fundo,
 body.dark-mode #galeria,
 body.dark-mode #contato,
 body.dark-mode .formulario {
-    background-color: #1f1f1f;
+    background-color: #121212;
     /* Cor de fundo no modo escuro */
     color: white;
     /* Cor do texto no modo escuro */
