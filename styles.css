@@ -196,9 +196,13 @@ body.dark-mode .nav-link {
 #toggleButton:focus {
     outline: none;
 }
-    /* Remove o contorno ao focar */
 
-    .container {
+
+
+    /*  Adicionar_depois_de_terminar_o_resto */
+
+
+    /* .container {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -212,4 +216,4 @@ body.dark-mode .nav-link {
         .item {
           width: 100%;
         }
-      }
+      } */
