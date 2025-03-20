@@ -14,30 +14,52 @@
 
 <body>
     <div class="container">
-        <div class="controls">
-            <button id="increaseFont"><i class="bi bi-plus-circle"></i> A+</button>
-            <button id="decreaseFont"><i class="bi bi-dash-circle"></i> A-</button>
-            <button id="toggleButton"><i class="bi bi-moon"></i></button>
-        </div>
-    </div>
+        <button id="toggleButton"><i class="bi bi-moon"></i></button>
+      </div>
+    
+      
+    
+    <header class=" p-5">
 
-    <header class="p-5">
         <nav class="container d-flex justify-content-between align-items-center">
             <ul class="nav mt-5">
                 <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
                 <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
                 <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
             </ul>
+
         </nav>
+
     </header>
 
+
     <main class="container my-5">
+
         <section id="inicio" class="my-5 inicio-fundo">
+    
             <div class="inicio-fundo d-flex justify-content-between align-items-center">
                 <div class="esquerda-conteudo">
                     <h1 class="display-4 text-white fst-italic fw-bold">Boas-vindas ao</h1>
-                    <img src="img/img/logo_funk_sem_fundo.png" class="mb-3 img-fluid resizable" width="563" height="278" loading="lazy">
-                    <a href="#funk" class="btn btn-primary btn-lg botao-inicio fw-semibold">Quero conhecer!</a>
+                    <img src="img/img/logo_funk_sem_fundo.png" class="mb-3" width="563" height="278" loading="lazy">
+                    <a href="#funk" class="btn btn-primary btn-lg botao-inicio fw-semibold">Quero
+                        conhecer!</a>
+              
+        </section>
+
+        <section id="funk" class="my-5 pt-6 secao-tropicalia">
+            <div class="container d-flex align-items-center ">
+                <div class="col-4 d-flex justify-content-center">
+                    <img src="img/img/oq_foi_funk.jpg" class="rounded-pill" alt="" width="273" height="331"
+                        loading="lazy">
+                </div>
+                <div class="col-5">
+                    <h2>O que foi o Funk?</h2>
+                    <p class="p-2">
+                        O funk é um gênero musical que surgiu nos anos 1960, nos Estados Unidos,
+                        e que combina elementos de jazz, soul e rhythm and blues.
+                        No Brasil, o funk começou a ser popular na década de 1970,
+                        nas favelas do Rio de Janeiro. 
+</p>
                 </div>
             </div>
         </section>
@@ -47,20 +69,53 @@
             <div class="container p-3 mt-3 fundo-galeria">
                 <div class="row justify-content-md-center">
                     <div class="col-md-4">
-                        <img src="img/img/foto_livinho.jpg" class="img-fluid rounded-5 resizable" loading="lazy" alt="Imagem 1">
+                        <img src="img/img/foto_livinho.jpg" class="img-fluid rounded-5" loading="lazy" alt="Imagem 1">
                     </div>
                     <div class="col-md-4">
-                        <img src="img/img/mo_paz.jpg" class="img-fluid rounded-5 resizable" loading="lazy" alt="Imagem 2">
+                        <img src="img/img/mo_paz.jpg" class="img-fluid rounded-5" loading="lazy" alt="Imagem 2">
                     </div>
                     <div class="col-md-4">
-                        <img src="img/img/funk_galeria.jpg" class="img-fluid rounded-5 resizable" loading="lazy" alt="Imagem 3">
+                        <img src="img/img/funk_galeria.jpg" class="img-fluid rounded-5" loading="lazy" alt="Imagem 3">
                     </div>
                 </div>
             </div>
         </section>
+        
+        
+
+        <section id="contato">
+            <div class="container p-5 d-flex justify-content-center">
+                <div class="col-md-8 col-lg-10 rounded-5 formulario"> <!-- Caixa do formulário com 60% de largura -->
+                    <h2 class="mb-3">Entre em contato</h2>
+                    <form>
+                        <div class="form-group mb-3">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" class="form-control rounded-3 mt-1"
+                                placeholder="Digite seu nome completo">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" class="form-control rounded-3 mt-1"
+                                placeholder="Digite seu email">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" class="form-control rounded-4 mt-2" rows="4"
+                                placeholder="Escreva sua mensagem"></textarea>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary btn-lg rounded-pill">Enviar
+                                mensagem</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
+   
 
     <script src="script.js"></script>
+
 </body>
 
 </html>
