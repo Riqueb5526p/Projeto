@@ -1,7 +1,10 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const toggleButton = document.getElementById('toggleButton');
+    const increaseFontButton = document.getElementById('increaseFont');
+    const decreaseFontButton = document.getElementById('decreaseFont');
     const body = document.body;
-  
+    let currentFontSize = 1; // Tamanho base da fonte (1 = 100%)
+
     toggleButton.addEventListener('click', () => {
         body.classList.toggle('dark-mode');
   
