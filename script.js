@@ -3,31 +3,30 @@ document.addEventListener("DOMContentLoaded", function () {
     const increaseFontButton = document.getElementById('increaseFont');
     const decreaseFontButton = document.getElementById('decreaseFont');
     const body = document.body;
-    let currentFontSize = 1; // Tamanho base da fonte (1 = 100%)
+    let currentScale = 1; // Escala inicial (1 = 100%)
 
     toggleButton.addEventListener('click', () => {
         body.classList.toggle('dark-mode');
 
         // Alterna o ícone do botão entre Lua e Sol
         const icon = toggleButton.querySelector('i');
-        if (body.classList.contains('dark-mode')) {
-            icon.classList.replace('bi-moon', 'bi-sun'); // Lua para Sol
-        } else {
-            icon.classList.replace('bi-sun', 'bi-moon'); // Sol para Lua
-        }
+        icon.classList.toggle('bi-moon');
+        icon.classList.toggle('bi-sun');
     });
 
-    function adjustFontSize(scale) {
-        currentFontSize *= scale; // Ajusta o tamanho da fonte
-        document.body.style.fontSize = `${currentFontSize}em`;
+    function adjustSize(scaleFactor) {
+        currentScale *= scaleFactor; // Ajusta a escala
 
-        // Ajustar tamanho das imagens proporcionalmente
+        // Ajusta o tamanho do texto
+        document.body.style.fontSize = `${currentScale}em`;
+
+        // Ajusta todas as imagens proporcionalmente
         document.querySelectorAll("img").forEach(img => {
-            img.style.width = `${img.naturalWidth * currentFontSize}px`;
-            img.style.height = `${img.naturalHeight * currentFontSize}px`;
+            img.style.width = `${img.naturalWidth * currentScale}px`;
+            img.style.height = `${img.naturalHeight * currentScale}px`;
         });
     }
 
-    increaseFontButton.addEventListener('click', () => adjustFontSize(1.1)); // Aumenta 10%
-    decreaseFontButton.addEventListener('click', () => adjustFontSize(0.9)); // Diminui 10%
+    increaseFontButton.addEventListener('click', () => adjustSize(1.1)); // Aumenta 10%
+    decreaseFontButton.addEventListener('click', () => adjustSize(0.9)); // Diminui 10%
 });
